@@ -6,16 +6,12 @@ function Header() {
   
   const [variable,setvariable] = useState(false);
 
-  function openbtn(e)
+  function button(e)
   {
     e.preventDefault();
-    // (variable)? variable.style={right: 0} : console.log('open');
+    (variable === true)? setvariable(false) : setvariable(true)
   }
-  function closebtn(e)
-  {
-    e.preventDefault();
-    // (variable)? variable.style={ width : 0 } : console.log('g');
-  }
+  
   return (
     <>
     <header>
@@ -36,13 +32,13 @@ function Header() {
         <ul>
             <a href=''><li>Shop</li></a>
             <a href=''><li>Account</li></a>
-            <a onClick={openbtn} href=''><li>Menu</li></a>
+            <a onClick={button} href=''><li>Menu</li></a>
         </ul>
         
     </header>
 
-    <ul className='sidebar'>
-        <a onClick={closebtn} id='close' href=''> < CloseIcon/> </a>
+    <ul className={`sidebar ${variable == true ? 'active' : ''}`}>
+        <a onClick={button} id='close' href=''> < CloseIcon/> </a>
         <a href=''><li>Modal S</li></a>
         <a href=''><li>Modal 3</li></a>
         <a href=''><li>Modal X</li></a>

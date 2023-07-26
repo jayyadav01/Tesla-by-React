@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
 
 function Section({image,head,par,leftbutton,rightbutton,arr}) {
-  // const [button,setbutton] = useState(false);
   return (
     <>
-    <section>
-        <img id='bg' src={image}/>
+    <section style={{background : `url(${image})`}}>
         
           <div className='detail'>
             <div className='desc'>
@@ -23,12 +21,8 @@ function Section({image,head,par,leftbutton,rightbutton,arr}) {
             {
                 (arr) ? <img id='downarr' src={arr}></img> : ''
             }
-            
-            
           </div>
-    </section>
-
-    
+    </section>    
     </>
   )
 }
