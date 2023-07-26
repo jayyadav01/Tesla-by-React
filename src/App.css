@@ -1,0 +1,116 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header
+{
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 2;
+}
+.logo
+{
+  padding: 1rem;
+}
+ul
+{
+  display: flex;
+}
+ul a
+{
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+  padding: 0.8rem;
+  color: black;
+  font-size: 1.1rem;
+}
+#bg
+{
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section
+{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail
+{ 
+  width: 700px;
+  height: 470px;
+  position: absolute;
+  text-align: center;
+  /* background-color: aqua; */
+}
+.button a
+{
+  text-decoration: none;
+}
+#left
+{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding : 0.8rem 5rem;
+  border-radius : 3rem;
+  margin: 0 2rem;
+}
+#right
+{
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding : 0.8rem 5rem;
+  border-radius : 3rem;
+}
+.desc
+{
+  margin-bottom: 320px;
+}
+.desc h1
+{
+  margin-top: 50px;
+  font-size: 40px;
+}
+#downarr
+{
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+}
+.sidebar
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 300px;
+  height: 100vh;
+  background-color: white;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 6;
+  padding-top: 40px;
+}
+.sidebar a
+{
+  margin-left: 30px;
+}
+#close
+{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
