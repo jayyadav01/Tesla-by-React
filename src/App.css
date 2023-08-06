@@ -5,6 +5,10 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+html
+{
+  scroll-snap-type: y mandatory;
+}
 header
 {
   width: 100vw;
@@ -45,6 +49,7 @@ section
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+  scroll-snap-align: start;
 }
 .detail
 { 
