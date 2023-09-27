@@ -19,7 +19,7 @@ function Header() {
             <a href=''><img src={logo}></img></a>
         </div>
 
-        <ul>
+        <ul className='modal'>
             <a href=''><li>Modal S</li></a>
             <a href=''><li>Modal 3</li></a>
             <a href=''><li>Modal X</li></a>
@@ -29,7 +29,7 @@ function Header() {
 
         </ul>
 
-        <ul>
+        <ul className='menu'>
             <a href=''><li>Shop</li></a>
             <a href=''><li>Account</li></a>
             <a onClick={button} href=''><li>Menu</li></a>
