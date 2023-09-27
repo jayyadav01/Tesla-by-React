@@ -112,7 +112,7 @@ section
 {
   margin-left: 30px;
 }
-.sidebar.active
+.active
 {
   right: 0;
 }
@@ -121,4 +121,50 @@ section
   position: absolute;
   top: 10px;
   right: 20px;
+}
+
+
+@media screen and (max-width : 948px)
+{
+  ul a {
+    padding: 0.8rem 0.4rem;
+    font-size: 0.8rem;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width : 673px)
+{
+  ul a {
+    padding: 0.8rem 0.4rem;
+    font-size: 0.5rem;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width : 513px)
+{
+  ul a {
+    padding: 0.8rem 0.3rem;
+    font-size: 0.5rem;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width : 484px)
+{
+  ul a {
+    padding: 0.8rem 0.3rem;
+    font-size: 0.3rem;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width : 378px)
+{
+  ul a {
+    padding: 0.8rem 0.2rem;
+    font-size: 0.2rem;
+    line-height: 35px;
+  }
 }
